@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  laravel:
+    build: .
+    image: laravel-dev
+    container_name: laravel-dev
+    volumes:
+      - .:/home/laravel
+    working_dir: /home/laravel
+    tty: true
+    user: laravel
